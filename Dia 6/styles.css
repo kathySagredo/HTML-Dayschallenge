@@ -1,0 +1,35 @@
+body{
+    background: rgb(107, 37, 12);
+    color: rgb(165, 164, 164);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 30px;
+}
+.texto{
+    position:absolute;
+    margin: 52px 300px
+}
+
+img {
+    position: absolute;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    width: 555.52px;
+    height: auto;
+    mix-blend-mode: color-burn;
+    transform: rotate(120deg);
+
+}
+a{
+    color:black; font-style: italic;
+}
+
+details summary::marker {
+    content:none;
+  }
+  
+details[open] summary::marker {
+    content:none;
+  }
+
+
