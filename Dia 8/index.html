@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(107, 37, 12);
+            color: rgb(165, 164, 164);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px 30px;
+        }
+
+        .texto {
+            position: absolute;
+            margin: 52px 300px
+        }
+
+        img {
+            position: absolute;
+            z-index: -1;
+            padding: 0;
+            margin: 0;
+            width: 555.52px;
+            height: auto;
+            mix-blend-mode: color-burn;
+            transform: rotate(120deg);
+
+        }
+
+        a {
+            color: black;
+            font-style: italic;
+        }
+
+        details summary::marker {
+            content: none;
+        }
+
+        details[open] summary::marker {
+            content: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Clickea la luna otoñal</h2>
+    <details class="texto">
+        <summary></summary>
+        <p>¡Hola mundo, bienvenidos a mi <span style="color:white; padding:8px; font-style: italic;">luna otoñal</span>!
+        </p>
+        <details name="acordeon">
+            <summary style="z-index: 3;">Descripción</summary>
+            <p>Este documento html esta diseñado para cumplir uno de los retos diarios de <a
+                    href="https://lenguajehtml.com/challenge/">ManzDev</a>.</p>
+            <p>Ademas de seguir aprendiendo y/o profundizando en contenidos relacionados al <mark>desarrollo web.</mark></p>
+        </details>
+        <details name="acordeon">
+            <summary style="z-index: 3;">Proyectos</summary>
+            <p>Si quieres ver más de mi trabajo, te invito a revisar mis proyectos en el siguiente enlace:
+                <a href="https://github.com/kathySagredo">Github KathySagredo</a>
+            </p>
+        </details>
+    </details>
+
+    <img src="../Assets/Crescent-moon-isolated-on-transparent-background-PNG.png" alt="Luna otoñal creciente">
+    <script>
+        const details = document.querySelector(".texto")
+        const imgLuna = document.querySelector("img")
+        console.log(imgLuna)
+
+        imgLuna.addEventListener("click", () => {
+            details.toggleAttribute("open");
+        })
+    </script>
+</body>
+
+</html>
