@@ -42,23 +42,33 @@
         details[open] summary::marker {
             content: none;
         }
+
+        .subtitulos {
+            background-color: rgb(163, 98, 0);
+            color:black
+        }
+        mark {
+            background-color: rgb(0, 0, 0);
+            color:rgb(163, 98, 0)
+        }
     </style>
 </head>
 
 <body>
-    <h2>Clickea la luna otoñal</h2>
+    <h2><mark>Clickea la luna otoñal</mark></h2>
     <details class="texto">
         <summary></summary>
         <p>¡Hola mundo, bienvenidos a mi <span style="color:white; padding:8px; font-style: italic;">luna otoñal</span>!
         </p>
         <details name="acordeon">
-            <summary style="z-index: 3;">Descripción</summary>
+            <summary style="z-index: 3;"><mark class="subtitulos">Descripción</mark></summary>
             <p>Este documento html esta diseñado para cumplir uno de los retos diarios de <a
                     href="https://lenguajehtml.com/challenge/">ManzDev</a>.</p>
-            <p>Ademas de seguir aprendiendo y/o profundizando en contenidos relacionados al <mark>desarrollo web.</mark></p>
+            <p>Ademas de seguir aprendiendo y/o profundizando en contenidos relacionados al desarrollo web.</p>
         </details>
+        <br>
         <details name="acordeon">
-            <summary style="z-index: 3;">Proyectos</summary>
+            <summary style="z-index: 3;"><mark class="subtitulos">Proyectos</mark></summary>
             <p>Si quieres ver más de mi trabajo, te invito a revisar mis proyectos en el siguiente enlace:
                 <a href="https://github.com/kathySagredo">Github KathySagredo</a>
             </p>
